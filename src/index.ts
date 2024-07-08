@@ -26,15 +26,15 @@ declare const window: Window;
     }
     info() {
       return {
-        name: "Example Plugin",
-        identifier: "example-plugin",
+        name: "S/E/D",
+        identifier: "sed",
         version: "1.0.0",
-        description: "This is an example plugin.",
-        author: "Your Name",
+        description: "Adds s/replace/with/ to replace text in your last message.",
+        author: "ShowierData9978",
       };
     }
     start() {
-      console.log("wdiu Plugin started!");
+      console.log("sed Plugin started!");
       
 
       Roarer.plugins.data.api.setState((state: Store | Partial<Store> | Map<string, any>) => {
@@ -59,7 +59,7 @@ declare const window: Window;
     }
 
     stop() {
-      console.log("wdiu Plugin stopped!");
+      console.log("sed Plugin stopped!");
       Roarer.plugins.data.api.setState((state: any) => {
         state.post = this.originalPost;
       });
